@@ -1,0 +1,128 @@
+/* Start body rules */
+
+.container {
+    font-family: 'Vibur', cursive;
+    font-family: 'Abel', sans-serif;
+    opacity: 0.95;
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #b1acac;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(0.00, 0%, 100%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(0.00, 5%, 85%) 0, transparent 55%);
+}
+
+/* Form attributes */
+.form {
+    
+    display:flex;
+    flex-direction: column;
+    min-height: 400px;
+    min-width: 400px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+  
+  .username {
+    display: flex;
+    flex-direction: column;
+    padding:20px
+  }
+  .password {
+    display: flex;
+    flex-direction: column;
+    padding:20px
+  }
+  
+ 
+  .button {
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+    min-height: 20x;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 70%;
+    will-change: transform;
+  }
+  
+  .button:disabled {
+    pointer-events: none;
+  }
+  
+  .button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  /* Define the .customInput class */
+.customInput {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.customInput input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #3498db;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.customInput label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+  pointer-events: none;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.customInput input:focus,
+.customInput input:valid {
+  border-color: #3498db;
+}
+
+.customInput input:focus + label,
+.customInput input:valid + label {
+  transform: translateY(-20px);
+  font-size: 12px;
+  color: #3498db;
+}
+
+  
